@@ -14,6 +14,31 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   /*margin-top: -2rem; /* metodo normal*/
+   margin-top: calc(0px - 1.5rem - 6px); /* metodo calculado -1.5rem(3rem/2) -6px(12px/2) - Cuidar pra o sinal de menos ficar afastado*/
+}
+
+.avatar{
+   box-sizing: initial; /* Faz com que as bordas sejam colocadas para fora do container do elemento*/
+   width: 3rem; /* metodo normal*/
+   height: 3rem; /* metodo normal*/
+   /*width: calc(3rem + 12px); /* metodo com cáculo  4px de cada lado + 2px de cada lado = 12px*/
+   /*height: calc(3rem + 12px); /* metodo com cáculo*/
+   border-radius: 8px;
+   border: 4px solid var(--gray-800);
+   outline: 2px solid var(--green-500);
+}
+
+.profile strong{
+   margin-top: 1rem;
+   color: var(--gray-100);
+   line-height: 1.6; /* = 160% */
+}
+
+.profile span{
+   font-size: 0.875rem; /* 0,875rem *16 = 14px */
+   color: var(--gray-400);
+   line-height: 1.6;
 }
 
 .sidebar footer{
@@ -32,7 +57,17 @@
    padding: 0 1.5rem; /* acima E abaixo =0 / nas laterais=1.5rem */
    display: block;
    text-decoration: none;
+
    display: flex;
    align-items: center; /* centraliza na vertical */
    justify-content: center; /* centraliza na horizontal */
+
+   gap: 0.5rem; /* espaçamento entre o ícone eo texto (0.5*16px = 8px) */
+
+   transition: color 0.1s, background-color 0.1s; /* transição para o hover abaixo(color= cor / background = cor de fundo) */
+}
+
+.sidebar footer a:hover{
+   background: var(--green-500);
+   color: var(--white);
 }
