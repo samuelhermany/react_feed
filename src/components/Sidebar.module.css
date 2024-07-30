@@ -1,0 +1,38 @@
+.sidebar{
+   background: var(--gray-800);
+   border-radius: 8px;
+   overflow: hidden; /* Ocula tudo que sai do tamanho do container */
+}
+
+.cover{
+   width: 100%;
+   height: 72px;
+   object-fit: cover; /* corta a imagem, deixando o centro visivel, não distorce a imagem*/
+}
+
+.profile{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.sidebar footer{
+   border-top: 1px solid var(--gray-600);
+   margin-top: 1.5rem;
+   padding: 1.5rem 2rem 2rem; /*em cima /laterais/ abaixo */
+}
+
+.sidebar footer a {
+   width: 100%;
+   background: transparent;
+   color: var(--green-500);
+   border: 1px solid var(--green-500);
+   border-radius: 8px;
+   height: 50px;
+   padding: 0 1.5rem; /* acima E abaixo =0 / nas laterais=1.5rem */
+   display: block;
+   text-decoration: none;
+   display: flex;
+   align-items: center; /* centraliza na vertical */
+   justify-content: center; /* centraliza na horizontal */
+}

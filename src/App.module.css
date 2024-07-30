@@ -1,0 +1,10 @@
+.wrapper{
+   max-width: 70rem; /* 70 * 16px = 1120 (256+32+832) é soma total dos dois objetos */
+   margin: 2rem auto; /* Em cima E abaixo 2rem(2*16px) e auto nas laterais, centralizando o objeto */
+   padding: 0 1rem; /* Se a tela for menor que 70rem nas laterais fique um pequeno espaçamento(1rem = 16px) */
+
+   display: grid;
+   grid-template-columns: 256px 1fr; /* primeira coluna tem 256px e a segunda vai se adaptar ao tamanho restante*/
+   gap: 2rem;  /* Espaçamento entre as colunas 2rem(16px * 2) */
+   align-items: flex-start; /* Faz com que o dois conteudos iniciem juntom, pois o padrão é strech */
+}
