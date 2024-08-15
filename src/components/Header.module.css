@@ -9,3 +9,22 @@
 .header img{
    height: 2rem;
 }
+
+
+/* src/GaleriaImagens.css */
+.galeria {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+ }
+
+ .imagem-item {
+   text-align: center;
+ }
+
+ .imagem-item img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
