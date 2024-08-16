@@ -46,15 +46,6 @@ color: var(--gray-400);
    gap: 1rem;
 }
 
-.author img {
-   /*box-sizing: initial; /* Faz com que as bordas sejam colocadas para fora do container do elemento*/
-   width: calc(3rem + 12px); /*width: ; /* metodo com cáculo  4px de cada lado + 2px de cada lado = 12px*/
-   height: calc(3rem + 12px); /*height: calc(3rem + 12px); /* metodo com cáculo*/
-   border-radius: 8px;
-   border: 4px solid var(--gray-800);
-   outline: 2px solid var(--green-500);
-}
-
 .authorInfo strong {
    display: block;
    color: var(--gray-100);
