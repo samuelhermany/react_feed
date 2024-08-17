@@ -8,3 +8,15 @@
    gap: 2rem;  /* Espaçamento entre as colunas 2rem(16px * 2) */
    align-items: flex-start; /* Faz com que o dois conteudos iniciem juntom, pois o padrão é strech */
 }
+
+/* Qaundo a tela for menor que 768px(mobile)*/
+@media (max-width: 768px){
+   html{
+      /* para obter 14px = sendo 16px o padrão, fazemos rega de três */
+      font-size: 87.5%; /* (14 x 100) / 16 = 87,5% */
+   }
+
+   .wrapper{
+      grid-template-columns: 1fr; /* Fica somente com uma coluna pois não a espaço para duas coluna */
+   }
+}
