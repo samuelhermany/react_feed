@@ -94,11 +94,11 @@ export function Post({ author, publishedAt, content }){
          </form>
 
          <div className={styles.commentList}>
-            {comments.map(comment => {
+            {comments.map(item => {
                return (
                   <Comment
-                  key={comment}
-                  content={comment}
+                  key={item}
+                  content={item}
                   onDeleteComment={deleteComment}
                   />
                )
